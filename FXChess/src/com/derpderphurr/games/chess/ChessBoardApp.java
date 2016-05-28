@@ -4,6 +4,8 @@ import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.XMLReader;
 
+import com.derpderphurr.graphics.svg.SVGParser;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -34,14 +36,14 @@ public class ChessBoardApp extends Application {
 		
 		
 		
-		cb.put(svg.availableGroups.get("white_rook"), Position.A1);
-		cb.put(svg.availableGroups.get("white_knight"), Position.B1);
-		cb.put(svg.availableGroups.get("white_bishop"), Position.C1);
-		cb.put(svg.availableGroups.get("white_king"), Position.D1);
-		cb.put(svg.availableGroups.get("white_queen"), Position.E1);
-		cb.put(svg.availableGroups.get("white_bishop"), Position.F1);
-		cb.put(svg.availableGroups.get("white_knight"), Position.G1);
-		cb.put(svg.availableGroups.get("white_rook"), Position.H1);
+		cb.put(svg.get("white_rook"), Position.A1);
+		cb.put(svg.get("white_knight"), Position.B1);
+		cb.put(svg.get("white_bishop"), Position.C1);
+		cb.put(svg.get("white_king"), Position.D1);
+		cb.put(svg.get("white_queen"), Position.E1);
+		cb.put(svg.get("white_bishop"), Position.F1);
+		cb.put(svg.get("white_knight"), Position.G1);
+		cb.put(svg.get("white_rook"), Position.H1);
 		
 		
 		

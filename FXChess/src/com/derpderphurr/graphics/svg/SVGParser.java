@@ -1,4 +1,4 @@
-package com.derpderphurr.games.chess;
+package com.derpderphurr.graphics.svg;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +22,8 @@ public class SVGParser extends DefaultHandler {
 
 	protected Map<String,Group> availableGroups;
 	protected Stack<Group> treepath;
+	
+	public Group get(String name) { return availableGroups.get(name); }
 	
 	protected Group currentGroup;
 	protected String groupStyle;
