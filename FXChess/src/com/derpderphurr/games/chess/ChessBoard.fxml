@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane gridLinesVisible="true" maxHeight="572.0" maxWidth="572.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="572.0" stylesheets="@/resources/ChessBoard.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.derpderphurr.games.chess.ChessBoard">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+	  <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="64.0" minWidth="64.0" prefWidth="64.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="64.0" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="A" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="B" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="C" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="D" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="E" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="F" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="G" GridPane.columnIndex="7" GridPane.halignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="topLetters" text="H" textAlignment="CENTER" GridPane.columnIndex="8" GridPane.halignment="CENTER" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="8" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="7" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="6" GridPane.rowIndex="3" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="5" GridPane.rowIndex="4" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="4" GridPane.rowIndex="5" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="3" GridPane.rowIndex="6" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="2" GridPane.rowIndex="7" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="1" GridPane.rowIndex="8" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="A" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="B" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="C" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="D" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="E" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="F" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="G" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottomLetters" text="H" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="8" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="leftNumbers" text="7" GridPane.rowIndex="2" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="6" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="5" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="4" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="3" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="2" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="rightNumbers" text="1" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+      <StackPane fx:id="A8" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <StackPane fx:id="B8" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <StackPane fx:id="C8" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <StackPane fx:id="D8" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <StackPane fx:id="E8" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <StackPane fx:id="F8" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <StackPane fx:id="G8" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+      <StackPane fx:id="H8" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+	  
+      <StackPane fx:id="A7" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <StackPane fx:id="B7" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+	  <StackPane fx:id="C7" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+	  <StackPane fx:id="D7" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+	  <StackPane fx:id="E7" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+	  <StackPane fx:id="F7" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+	  <StackPane fx:id="G7" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+	  <StackPane fx:id="H7" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+	  
+	  <StackPane fx:id="A6" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+	  <StackPane fx:id="B6" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+	  <StackPane fx:id="C6" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+	  <StackPane fx:id="D6" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+	  <StackPane fx:id="E6" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+	  <StackPane fx:id="F6" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+	  <StackPane fx:id="G6" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+	  <StackPane fx:id="H6" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+      
+	  <StackPane fx:id="A5" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+	  <StackPane fx:id="B5" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+	  <StackPane fx:id="C5" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+	  <StackPane fx:id="D5" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+	  <StackPane fx:id="E5" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+	  <StackPane fx:id="F5" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+	  <StackPane fx:id="G5" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+	  <StackPane fx:id="H5" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+      
+	  <StackPane fx:id="A4" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+	  <StackPane fx:id="B4" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+	  <StackPane fx:id="C4" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+	  <StackPane fx:id="D4" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+	  <StackPane fx:id="E4" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+	  <StackPane fx:id="F4" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+	  <StackPane fx:id="G4" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+	  <StackPane fx:id="H4" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+      
+	  <StackPane fx:id="A3" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+	  <StackPane fx:id="B3" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+	  <StackPane fx:id="C3" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+	  <StackPane fx:id="D3" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+	  <StackPane fx:id="E3" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+	  <StackPane fx:id="F3" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+	  <StackPane fx:id="G3" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+	  <StackPane fx:id="H3" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+      
+	  <StackPane fx:id="A2" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+	  <StackPane fx:id="B2" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+	  <StackPane fx:id="C2" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+	  <StackPane fx:id="D2" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+	  <StackPane fx:id="E2" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+	  <StackPane fx:id="F2" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+	  <StackPane fx:id="G2" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+	  <StackPane fx:id="H2" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+      
+	  <StackPane fx:id="A1" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+	  <StackPane fx:id="B1" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+	  <StackPane fx:id="C1" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+	  <StackPane fx:id="D1" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+	  <StackPane fx:id="E1" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+	  <StackPane fx:id="F1" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+	  <StackPane fx:id="G1" prefHeight="200.0" prefWidth="200.0" styleClass="b" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+	  <StackPane fx:id="H1" prefHeight="200.0" prefWidth="200.0" styleClass="w" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+   </children>
+</GridPane>
