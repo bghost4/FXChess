@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
+
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.layout.GridPane;
@@ -209,89 +210,96 @@ public class ChessBoard extends GridPane {
 	    @FXML // fx:id="H1"
 	    private StackPane H1; // Value injected by FXMLLoader
 
-	    private Map<Position,StackPane> positionResolver;
+	    private Map<ChessPosition,StackPane> positionResolver;
 	    
-	    public void put(Node n,Position p) {
+	    public void put(Node n,ChessPosition p) {
+	    	positionResolver.get(p).getChildren().add(n);
+	    }
+	    
+	    public void move(Node n,ChessPosition p) {
+	    	//positionResolver.get(p).getChildren().remove(n);
 	    	positionResolver.get(p).getChildren().add(n);
 	    }
 	    
 	    private void initPositionResolver() {
-	    	positionResolver.put(Position.A1, A1);
-	    	positionResolver.put(Position.A2, A2);
-	    	positionResolver.put(Position.A3, A3);
-	    	positionResolver.put(Position.A4, A4);
-	    	positionResolver.put(Position.A5, A5);
-	    	positionResolver.put(Position.A6, A6);
-	    	positionResolver.put(Position.A7, A7);
-	    	positionResolver.put(Position.A8, A8);
+	    	System.out.println("Creating Position Map");
+	    	positionResolver.put(ChessPosition.A1, A1);
+	    	positionResolver.put(ChessPosition.A2, A2);
+	    	positionResolver.put(ChessPosition.A3, A3);
+	    	positionResolver.put(ChessPosition.A4, A4);
+	    	positionResolver.put(ChessPosition.A5, A5);
+	    	positionResolver.put(ChessPosition.A6, A6);
+	    	positionResolver.put(ChessPosition.A7, A7);
+	    	positionResolver.put(ChessPosition.A8, A8);
 	    	
-	    	positionResolver.put(Position.B1, B1);
-	    	positionResolver.put(Position.B2, B2);
-	    	positionResolver.put(Position.B3, B3);
-	    	positionResolver.put(Position.B4, B4);
-	    	positionResolver.put(Position.B5, B5);
-	    	positionResolver.put(Position.B6, B6);
-	    	positionResolver.put(Position.B7, B7);
-	    	positionResolver.put(Position.B8, B8);
+	    	positionResolver.put(ChessPosition.B1, B1);
+	    	positionResolver.put(ChessPosition.B2, B2);
+	    	positionResolver.put(ChessPosition.B3, B3);
+	    	positionResolver.put(ChessPosition.B4, B4);
+	    	positionResolver.put(ChessPosition.B5, B5);
+	    	positionResolver.put(ChessPosition.B6, B6);
+	    	positionResolver.put(ChessPosition.B7, B7);
+	    	positionResolver.put(ChessPosition.B8, B8);
 	    	
-	    	positionResolver.put(Position.C1, C1);
-	    	positionResolver.put(Position.C2, C2);
-	    	positionResolver.put(Position.C3, C3);
-	    	positionResolver.put(Position.C4, C4);
-	    	positionResolver.put(Position.C5, C5);
-	    	positionResolver.put(Position.C6, C6);
-	    	positionResolver.put(Position.C7, C7);
-	    	positionResolver.put(Position.C8, C8);
+	    	positionResolver.put(ChessPosition.C1, C1);
+	    	positionResolver.put(ChessPosition.C2, C2);
+	    	positionResolver.put(ChessPosition.C3, C3);
+	    	positionResolver.put(ChessPosition.C4, C4);
+	    	positionResolver.put(ChessPosition.C5, C5);
+	    	positionResolver.put(ChessPosition.C6, C6);
+	    	positionResolver.put(ChessPosition.C7, C7);
+	    	positionResolver.put(ChessPosition.C8, C8);
 	    	
-	    	positionResolver.put(Position.D1, D1);
-	    	positionResolver.put(Position.D2, D2);
-	    	positionResolver.put(Position.D3, D3);
-	    	positionResolver.put(Position.D4, D4);
-	    	positionResolver.put(Position.D5, D5);
-	    	positionResolver.put(Position.D6, D6);
-	    	positionResolver.put(Position.D7, D7);
-	    	positionResolver.put(Position.D8, D8);
+	    	positionResolver.put(ChessPosition.D1, D1);
+	    	positionResolver.put(ChessPosition.D2, D2);
+	    	positionResolver.put(ChessPosition.D3, D3);
+	    	positionResolver.put(ChessPosition.D4, D4);
+	    	positionResolver.put(ChessPosition.D5, D5);
+	    	positionResolver.put(ChessPosition.D6, D6);
+	    	positionResolver.put(ChessPosition.D7, D7);
+	    	positionResolver.put(ChessPosition.D8, D8);
 	    	
-	    	positionResolver.put(Position.E1, E1);
-	    	positionResolver.put(Position.E2, E2);
-	    	positionResolver.put(Position.E3, E3);
-	    	positionResolver.put(Position.E4, E4);
-	    	positionResolver.put(Position.E5, E5);
-	    	positionResolver.put(Position.E6, E6);
-	    	positionResolver.put(Position.E7, E7);
-	    	positionResolver.put(Position.E8, E8);
+	    	positionResolver.put(ChessPosition.E1, E1);
+	    	positionResolver.put(ChessPosition.E2, E2);
+	    	positionResolver.put(ChessPosition.E3, E3);
+	    	positionResolver.put(ChessPosition.E4, E4);
+	    	positionResolver.put(ChessPosition.E5, E5);
+	    	positionResolver.put(ChessPosition.E6, E6);
+	    	positionResolver.put(ChessPosition.E7, E7);
+	    	positionResolver.put(ChessPosition.E8, E8);
 	    	
-	    	positionResolver.put(Position.F1, F1);
-	    	positionResolver.put(Position.F2, F2);
-	    	positionResolver.put(Position.F3, F3);
-	    	positionResolver.put(Position.F4, F4);
-	    	positionResolver.put(Position.F5, F5);
-	    	positionResolver.put(Position.F6, F6);
-	    	positionResolver.put(Position.F7, F7);
-	    	positionResolver.put(Position.F8, F8);
+	    	positionResolver.put(ChessPosition.F1, F1);
+	    	positionResolver.put(ChessPosition.F2, F2);
+	    	positionResolver.put(ChessPosition.F3, F3);
+	    	positionResolver.put(ChessPosition.F4, F4);
+	    	positionResolver.put(ChessPosition.F5, F5);
+	    	positionResolver.put(ChessPosition.F6, F6);
+	    	positionResolver.put(ChessPosition.F7, F7);
+	    	positionResolver.put(ChessPosition.F8, F8);
 	    	
-	    	positionResolver.put(Position.G1, G1);
-	    	positionResolver.put(Position.G2, G2);
-	    	positionResolver.put(Position.G3, G3);
-	    	positionResolver.put(Position.G4, G4);
-	    	positionResolver.put(Position.G5, G5);
-	    	positionResolver.put(Position.G6, G6);
-	    	positionResolver.put(Position.G7, G7);
-	    	positionResolver.put(Position.G8, G8);
+	    	positionResolver.put(ChessPosition.G1, G1);
+	    	positionResolver.put(ChessPosition.G2, G2);
+	    	positionResolver.put(ChessPosition.G3, G3);
+	    	positionResolver.put(ChessPosition.G4, G4);
+	    	positionResolver.put(ChessPosition.G5, G5);
+	    	positionResolver.put(ChessPosition.G6, G6);
+	    	positionResolver.put(ChessPosition.G7, G7);
+	    	positionResolver.put(ChessPosition.G8, G8);
 	    	
-	    	positionResolver.put(Position.H1, H1);
-	    	positionResolver.put(Position.H2, H2);
-	    	positionResolver.put(Position.H3, H3);
-	    	positionResolver.put(Position.H4, H4);
-	    	positionResolver.put(Position.H5, H5);
-	    	positionResolver.put(Position.H6, H6);
-	    	positionResolver.put(Position.H7, H7);
-	    	positionResolver.put(Position.H8, H8);
+	    	positionResolver.put(ChessPosition.H1, H1);
+	    	positionResolver.put(ChessPosition.H2, H2);
+	    	positionResolver.put(ChessPosition.H3, H3);
+	    	positionResolver.put(ChessPosition.H4, H4);
+	    	positionResolver.put(ChessPosition.H5, H5);
+	    	positionResolver.put(ChessPosition.H6, H6);
+	    	positionResolver.put(ChessPosition.H7, H7);
+	    	positionResolver.put(ChessPosition.H8, H8);
+	    	System.out.println("Done Creating Position Map");
 	    } 
 	    
 	    public ChessBoard() {
 	    	System.out.println("Chessboard Constructor called");
-	    	positionResolver = new HashMap<Position,StackPane>();
+	    	positionResolver = new HashMap<ChessPosition,StackPane>();
 	    	// ewwww
 	    	
 	    }

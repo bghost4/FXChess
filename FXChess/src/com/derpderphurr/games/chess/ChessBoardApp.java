@@ -2,13 +2,15 @@ package com.derpderphurr.games.chess;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
+import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 
-import com.derpderphurr.graphics.svg.SVGParser;
+import com.derpderphurr.graphics.SvgToFXBuilder;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -16,7 +18,6 @@ import javafx.stage.Stage;
 public class ChessBoardApp extends Application {
 
 	private ChessBoard cb;
-	private SVGParser svg;
 	
 	@Override
 	public void start(Stage arg0) throws Exception {
@@ -27,26 +28,26 @@ public class ChessBoardApp extends Application {
 			System.err.println("Controller was null");
 		}
 		
-		SAXParserFactory spf = SAXParserFactory.newInstance();
-		svg = new SVGParser();
-		SAXParser sp = spf.newSAXParser();
-		XMLReader xmlReader = sp.getXMLReader();
-		xmlReader.setContentHandler(svg);
-		xmlReader.parse(this.getClass().getResource("/resources/Chess_Pieces_Sprite.svg").toString());
+		SvgToFXBuilder fxb = new SvgToFXBuilder();
+			fxb.loadXML("chess_pieces", new InputSource(this.getClass().getResourceAsStream("/resources/Chess_Pieces_Sprite.svg")));
+		 
+		Node whiteRook1 = fxb.createInstanceFromId("white_rook");
+		Node whiteRook2 = fxb.createInstanceFromId("white_rook");
 		
 		
+		cb.put(whiteRook1, ChessPosition.A1);
+		cb.put(fxb.createInstanceFromId("white_knight"), ChessPosition.B1);
+		cb.put(fxb.createInstanceFromId("white_bishop"), ChessPosition.C1);
+		cb.put(fxb.createInstanceFromId("white_king"), ChessPosition.D1);
+		cb.put(fxb.createInstanceFromId("white_queen"), ChessPosition.E1);
+		cb.put(fxb.createInstanceFromId("white_bishop"), ChessPosition.F1);
+		cb.put(fxb.createInstanceFromId("white_knight"), ChessPosition.G1);
+		cb.put(whiteRook2, ChessPosition.H1);
 		
-		cb.put(svg.get("white_rook"), Position.A1);
-		cb.put(svg.get("white_knight"), Position.B1);
-		cb.put(svg.get("white_bishop"), Position.C1);
-		cb.put(svg.get("white_king"), Position.D1);
-		cb.put(svg.get("white_queen"), Position.E1);
-		cb.put(svg.get("white_bishop"), Position.F1);
-		cb.put(svg.get("white_knight"), Position.G1);
-		cb.put(svg.get("white_rook"), Position.H1);
-		
-		
-		
+		whiteRook1.setOnMouseClicked(me -> { 
+			System.out.println("Rook Clicked");
+			cb.move(whiteRook1, ChessPosition.A8);
+			});
 		
 		Scene s = new Scene(p);		
 		arg0.setScene(s);

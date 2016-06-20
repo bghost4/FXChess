@@ -1,6 +1,8 @@
 package com.derpderphurr.games.chess;
 
-public enum Position {
+import com.derpderphurr.games.board.Position;
+
+public enum ChessPosition implements Position{
 	A8("A8"),B8("B8"),C8("C8"),D8("D8"),E8("E8"),F8("F8"),G8("G8"),H8("H8"),
 	A7("A7"),B7("B7"),C7("C7"),D7("D7"),E7("E7"),F7("F7"),G7("G7"),H7("H7"),
 	A6("A6"),B6("B6"),C6("C6"),D6("D6"),E6("E6"),F6("F6"),G6("G6"),H6("H6"),
@@ -11,6 +13,6 @@ public enum Position {
 	A1("A1"),B1("B1"),C1("C1"),D1("D1"),E1("E1"),F1("F1"),G1("G1"),H1("H1");
 	
 	private String positionid;
-	private Position(String id) { this.positionid = id; }
+	private ChessPosition(String id) { this.positionid = id; }
 	public String getId() { return positionid; }
 }
